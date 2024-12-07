@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-void square(int n ){
-    for (int i = 0; i< n; i ++ ){
-        for (int j = 0 ; j < n ; j++){
+void tringle (int n ){
+    for (int i = 0 ; i < n ; i ++){
+        for (int j = 0 ; j<i+1 ; j++ ){
             cout<<"*";
         }
         cout<<endl;
@@ -13,14 +13,14 @@ void square(int n ){
 int main (){
     int n ;
     cin>>n;
-    square(n);
+    tringle(n);
 }
 
-/*
-*****
-*****
-*****
-*****
-*****
 
+/* 
+*
+**
+***
+****
+*****
 */
