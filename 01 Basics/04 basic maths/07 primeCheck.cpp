@@ -2,8 +2,7 @@
 using namespace std;
 // #include<math.h>
 
-bool prime (int num){
- 
+bool prime (int num){ 
     if (num <=1 || num<=0){
        return false;
     }    
