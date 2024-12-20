@@ -49,6 +49,7 @@ int sum (int num1 , int num2){
 
 int main (){
     int num1;
+    cout<<"first um";
     cin>>num1;
     int num2;
     cin>>num2;

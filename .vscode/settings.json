@@ -22,5 +22,6 @@
         "cstddef": "cpp",
         "filesystem": "cpp",
         "random": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

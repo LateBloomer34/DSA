@@ -2,3 +2,4 @@
 .vscode
 /ans.exe.dSYM/Contents
 temp
+.DS_Store
