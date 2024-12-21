@@ -12,9 +12,7 @@ int secondLar(int arr[] , int n){
 for (int i =0 ; i < n ; i++){
     if (arr[i]>largest){
         sec= largest;
-        largest = arr[i];
-       
-  
+        largest = arr[i];  
     }
   else if(arr[i]>sec && arr[i]!=largest){ //else if(arr[i]>sec && arr[i]<largest)-- we can also write
         sec = arr[i];
