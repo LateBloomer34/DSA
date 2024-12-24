@@ -1,5 +1,7 @@
 *.exe
-.vscode
-/ans.exe.dSYM/Contents
-temp
-.DS_Store
+*.vscode
+*/ans.exe.dSYM/Contents
+*temp
+*.DS_Store
+*settings.json
+settings.json
