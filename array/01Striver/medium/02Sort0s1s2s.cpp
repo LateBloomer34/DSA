@@ -12,7 +12,7 @@ void sort(int arr[], int n) {
             low++;
             mid++;
         } else if (arr[low] == 1) { 
-            swap(arr[low], arr[mid]);
+            // swap(arr[mid], arr[mid]);
             mid++;
         } else { // arr[low] == 2
             swap(arr[mid], arr[high]);
