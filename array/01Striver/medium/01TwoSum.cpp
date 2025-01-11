@@ -14,12 +14,12 @@
 // method 1:-  using 2 pointer
 
 
-/*
-// #include<bits/stdc++.h>
+
+#include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
 
-vector<int> twoSum (vector<int> &arr , int target){
+vector<int> twoSum (vector<int> arr , int target){
     sort(arr.begin() , arr.end());
     int n = arr.size();
     int start = 0;
@@ -59,10 +59,10 @@ int main (){
 
 }
 
-*/
+
 
 // method 2  - brute approach - check using loop group
-
+/*
 #include<iostream>
 using namespace std;
 
@@ -87,3 +87,5 @@ int main (){
     int target = 15;
     twoSum(arr, n , target);
 }
+
+*/
