@@ -63,45 +63,47 @@ int main (){
 //optimal using 2 pointer
 
 #include<iostream>
-#include<bits/stdc++.h>
 using namespace std;
 
-vector <int> twoSum(vector<int> &arr , int target){
+vector <int> twoSum(vector<int>arr , int target ){
     sort(arr.begin() , arr.end());
     int n = arr.size();
-    // cout<<n;
     int start = 0;
-    int end = n-1;
+    int end  = n-1;
+
     while(start<end){
-            if (arr[start]+arr[end]==target){
-                return {start,end};
-            }
-            else if (arr[start]+arr[end]>target){
-                    end--;
-            }
-            else{
-                start++;
-            }
-    }
-
-
-    return {};
-}
-
-int main (){
-    vector <int>arr= {2,6,5,8,11};
-    int target = 14;
-    vector<int> indices = twoSum(arr , target);
-
-    if (indices.empty()){
-        cout<<"not found"<<endl;
-    }
-    else{
-        cout<<"found at index ";
-        for (int i = 0 ; i < res.size() ;i++){
-        cout<<res[i]<<" ";
+        if (arr[start]+arr[end]==target){
+            int a = arr[start];
+            int b = arr[end];
+            cout<<"sum of "<<a<<" and "<<b<<" is "<<target<<endl;
+            return {a,b};
+            // return "yes";
         }
-        cout<<endl;
+        else if (arr[start]+arr[end]<target){
+            start++;
+        }
+        else{
+            end--;
+        }
     }
-    return 0;
+    return {}; 
 }
+
+int main(){
+    vector<int>arr = {2,6,5,8,11};
+    int target =1;
+    vector<int>result = twoSum(arr, target);
+        if (result.empty()){
+            cout<<"sum not avavilable";
+        }
+        else{
+            cout<<"available at index ";
+            for (int j = 0 ; j < result.size() ; j++){
+            for (int i = 0 ; i<arr.size() ; i++){
+                if ( arr[i]==result[j]){
+                        cout<<i<<" and ";
+                    }
+                }
+            }
+        }
+    }
