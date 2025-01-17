@@ -14,7 +14,7 @@
 // method 1:-  using 2 pointer
 
 
-
+/*
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
@@ -59,6 +59,61 @@ int main (){
 
 }
 
+*/
+// if we wants to print indices in above method , we mofidfy the code inside int main 
+
+
+/*
+#include<iostream>
+using namespace std;
+
+vector <int> twoSum(vector<int>arr , int target ){
+    sort(arr.begin() , arr.end());
+    int n = arr.size();
+    int start = 0;
+    int end  = n-1;
+
+    while(start<end){
+        if (arr[start]+arr[end]==target){
+            int a = arr[start];
+            int b = arr[end];
+            cout<<"sum of "<<a<<" and "<<b<<" is "<<target<<endl;
+            return {a,b};
+            // return "yes";
+        }
+        else if (arr[start]+arr[end]<target){
+            start++;
+        }
+        else{
+            end--;
+        }
+    }
+    return {}; 
+}
+
+int main(){
+    vector<int>arr = {2,6,5,8,11};
+    int target =1;
+    vector<int>result = twoSum(arr, target);
+        if (result.empty()){
+            cout<<"sum not avavilable";
+        }
+        else{
+            cout<<"available at index ";
+            for (int j = 0 ; j < result.size() ; j++){
+            for (int i = 0 ; i<arr.size() ; i++){
+                if ( arr[i]==result[j]){
+                        cout<<i<<" and ";
+                    }
+                }
+            }
+        }
+    }
+
+
+*/
+
+
 
 
 // method 2  - brute approach - check using loop group
@@ -87,5 +142,5 @@ int main (){
     int target = 15;
     twoSum(arr, n , target);
 }
-
 */
+
