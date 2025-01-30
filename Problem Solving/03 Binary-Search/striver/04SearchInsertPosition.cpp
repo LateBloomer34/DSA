@@ -1,5 +1,7 @@
 //search insert position
 
+//methid use  - LB and find element in array
+
 #include<iostream>
 using namespace std;
 
@@ -27,7 +29,7 @@ int ip (int arr[] , int n , int target){
 int main (){
     int arr [] = {1,2,4,7};
     int n = sizeof arr / sizeof arr[0];
-    int target  = 2;
+    int target  = 3;
     int k = ip(arr , n , target);
     cout<<k;
 }

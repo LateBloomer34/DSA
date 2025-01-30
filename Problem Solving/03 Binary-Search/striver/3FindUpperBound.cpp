@@ -18,7 +18,7 @@ int upperBound(int arr[] , int n ,  int target ){
             start = mid+1;
         }
     }
-return start;
+return arr[start];
 }
 
 int main (){
