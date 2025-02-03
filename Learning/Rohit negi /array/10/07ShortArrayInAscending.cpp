@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+
+//we can also solve it by using sort function , but TC of sort is O()
+
 int sort (int arr[] , int n ){
     int start = 0 ;
     int mid = 0 ;
