@@ -1,4 +1,4 @@
-// stes require to make product equals to one
+// steps require to make product equals to one
 
 
 #include<iostream>
@@ -9,9 +9,9 @@ int steps(vector <int>arr){
     int steps = 0;
     int mul = 1;
     int zcount = 0;
-    for(int i = 0 ; i < n ; i++){
-        if (arr[i]>=1)
-        steps = steps+(arr[i]-1);
+    for(int i = 0; i < n; i++){
+        if (arr[i]>=1){
+        steps = steps+(arr[i]-1);}
         else if (arr[i]<=-1){
             steps = steps + (-(arr[i]+1)); 
             mul = mul*-1;
@@ -32,7 +32,7 @@ int steps(vector <int>arr){
 }
 
 int main (){
-    vector <int> arr = {-1,0};
+    vector <int> arr = {2,5,-1,0};
     int k =steps(arr);
     cout<<k;
 }
