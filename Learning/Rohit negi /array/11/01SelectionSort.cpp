@@ -1,5 +1,4 @@
-///selection sort - select element and compare it with all element;
-
+// selection sort - select element and compare it with all element;
 
 #include<iostream>
 using namespace std;
