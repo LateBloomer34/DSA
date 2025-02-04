@@ -1,4 +1,4 @@
-///selection sort
+///selection sort - select element and compare it with all element;
 
 
 #include<iostream>
