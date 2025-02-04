@@ -1,4 +1,5 @@
-// bubble sort  -  compare every element with their next element 
+// bubble sort  -  compare every element with their next element - 
+// bubble sort is like school assembly queue -  every student compare with his next one by one , based on height
 
 
 #include<iostream>
