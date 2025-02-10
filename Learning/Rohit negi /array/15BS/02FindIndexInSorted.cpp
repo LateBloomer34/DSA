@@ -14,7 +14,7 @@ while(start <=end){
     if (target == arr[mid]){
         return mid;
     }
-    if (arr[start] <= arr[mid]) { 
+     else if (arr[start] <= arr[mid]) { 
             if (target >= arr[start] && target < arr[mid]) {
                 end = mid - 1; 
             } 
@@ -36,6 +36,6 @@ while(start <=end){
 int main (){
     int arr [] = {5,6,7,8,9,10,1,2,3};   ///10 1 2 3  4  5 6
     int n = sizeof arr / sizeof arr[0];
-    int target = 0;
+    int target = 10;
     cout<<location (arr , n , target );
 }
